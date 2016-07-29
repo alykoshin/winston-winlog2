@@ -4,7 +4,24 @@
   "description": "Fork of winston-winlog2 - Windows Event Log logger for the node.js Winston module.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint -f unix .",
+    "inspect": "jsinspect",
+    "_pretest": "npm run lint && npm run inspect",
+    "____test": "echo \"Warning: no test specified\" && exit 0",
+    "___test": "echo \"Error: no test specified\" && exit 1",
+    "__test": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
+    "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
+    "_commit": "git commit -am \"commit by 'npm run commit'\"",
+    "_push": "git push --follow-tags",
+    "commit-and-push": "npm run _commit && npm test && npm run _push",
+    "_patch-release": "npm version patch && npm publish",
+    "_minor-release": "npm version minor && npm publish",
+    "_major-release": "npm version major && npm publish",
+    "patch-release": "npm test && npm run _patch-release && npm run _push",
+    "minor-release": "npm test && npm run _minor-release && npm run _push",
+    "__major-release": "npm test && npm run _major-release && npm run _push",
+    "coverall": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
     "type": "git",
