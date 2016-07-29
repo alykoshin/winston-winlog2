@@ -28,8 +28,8 @@
   },
   "homepage": "https://github.com/alykoshin/winston-winlog3",
   "dependencies": {
-    "circular-json": "^0.1.6",
-    "node-windows": "^0.1.7",
-    "winston": "^1.0.0"
+    "circular-json": "^0.3.0",
+    "node-windows": "^0.1.11",
+    "winston": "^2.2.0"
   }
 }
