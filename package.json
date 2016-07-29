@@ -1,14 +1,14 @@
 {
-  "name": "winston-winlog2",
-  "version": "1.0.1",
-  "description": "Windows Event Log logger for the node.js Winston module.",
+  "name": "winston-winlog3",
+  "version": "1.0.0",
+  "description": "Fork of winston-winlog2 - Windows Event Log logger for the node.js Winston module.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/peteward44/winston-winlog2.git"
+    "url": "https://github.com/alykoshin/winston-winlog3.git"
   },
   "keywords": [
     "windows",
@@ -19,14 +19,14 @@
     "winston"
   ],
   "author": {
-    "name": "Pete Ward",
-    "email": "peteward44@gmail.com"
+    "name": "alykoshin",
+    "email": "alykoshin@gmail.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/peteward44/winston-winlog2/issues"
+    "url": "https://github.com/alykoshin/winston-winlog3/issues"
   },
-  "homepage": "https://github.com/peteward44/winston-winlog2",
+  "homepage": "https://github.com/alykoshin/winston-winlog3",
   "dependencies": {
     "circular-json": "^0.1.6",
     "node-windows": "^0.1.7",
