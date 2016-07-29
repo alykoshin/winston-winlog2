@@ -1,4 +1,14 @@
-# winston-winlog2
+# winston-winlog3
+
+Fork of winston-winlog2
+
+Added:
+- ability to set `EventId` using `meta` parameter (with range check) 
+- fixed double quotes handling
+
+____
+
+
 Windows Event Log logger for the node.js Winston module.
 
 Exactly like the original winston-winlog, however uses coreybutler/node-windows instead of jfromaniello/windowseventlogjs so no native compiling using node-gyp is required. Also automatically pops up a UAC box if admin permissions are required.
