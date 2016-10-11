@@ -45,7 +45,7 @@
   },
   "homepage": "https://github.com/alykoshin/winston-winlog3",
   "dependencies": {
-    "circular-json": "^0.3.0",
+    "circular-json": "^0.3.1",
     "node-windows2": "^0.0.3",
     "winston": "^2.2.0"
   }
