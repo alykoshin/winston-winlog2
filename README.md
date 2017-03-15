@@ -15,7 +15,7 @@ Exactly like the original winston-winlog, however uses coreybutler/node-windows 
 
 ## Installation
 
-    $ npm install winston-winlog2
+    $ npm install winston-winlog3
     $ npm install winston
 
 
@@ -25,7 +25,7 @@ Configure :
 
 ```js
   var winston = require('winston'),
-      winlog = require("winston-winlog2");
+      winlog = require("winston-winlog3");
 
   winston.add(winlog, { source: 'myapp' });
 ```
