@@ -1,6 +1,6 @@
 {
   "name": "winston-winlog3",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Fork of winston-winlog2 - Windows Event Log logger for the node.js Winston module.",
   "main": "index.js",
   "scripts": {
