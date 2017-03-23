@@ -6,6 +6,8 @@ Added:
 - ability to set `EventId` using `meta` parameter (with range check) 
 - fixed double quotes handling
 
+![Event with ID](doc/img/event_with_id.jpeg)
+
 ____
 
 
