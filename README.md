@@ -3,12 +3,18 @@
 Fork of winston-winlog2
 
 Added:
-- ability to set `EventId` using `meta` parameter (with range check) 
+- ability to set `Event Id` using `id` field of `meta` parameter (with range check)
 - fixed double quotes handling
+
+```js
+winston.add(winlog, { id: 123 });
+```
 
 ![Event with ID](doc/img/event_with_id.jpeg)
 
 ____
+
+# Original README.md with minor changes
 
 
 Windows Event Log logger for the node.js Winston module.
@@ -34,7 +40,7 @@ Configure :
 
 Then you can do:
 
-```bash
+```js
   winston.info("this is an info message");
   winston.warning("this is an warning message");
   winston.error("this is an error message");
