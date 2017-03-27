@@ -7,7 +7,15 @@ Added:
 - fixed double quotes handling
 
 ```js
-winston.add(winlog, { id: 123 });
+var winston = require('winston'),
+    winlog = require('winston-winlog3');
+    //winlog = require('../../');
+
+winston.add(winlog, { source: 'node' });
+
+winston.info('this is an info message',    { id: 1   });
+winston.warn('this is an warning message', { id: 123 });
+winston.error('this is an error message',  { id: 321 });
 ```
 
 ![Event with ID](doc/img/event_with_id.jpeg)
