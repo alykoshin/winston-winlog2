@@ -18,7 +18,7 @@ const winlogTransport = new (winlog3)({
   method:    'eventcreate'
 });
 
-// Add Treansport to Winston's Loggers
+// Add Transport to Winston's Loggers
 const logger = winston.loggers.add(categoryName, {
   transports: [ winlogTransport ]
 });
@@ -47,7 +47,6 @@ let err = new Error('This is generic Javascript Error object.');
 err.id = 321;       // augment with `id` property to pass to Windows Event Log
 err.status = 500;   // augment with custom property to pass to Windows Event Log
 let msg = 'ERROR: ' + err.message + ' Stack info:' +err.stack;
-msg.replace('\n', '\r\n');
 
 logger.error(msg, err);
 
